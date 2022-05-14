@@ -1,4 +1,4 @@
-package session
+package cognitosession
 
 var Article = "ssssdddd"
 

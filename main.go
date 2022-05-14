@@ -13,7 +13,7 @@ func main() {
 	fmt.Println("Hello World")
 
 
-	var s session.SessionStruct
+	var s cognitosession.SessionStruct
 
 	s.Credential.AccessToken = "accesstoken"
 	fmt.Println(s)
@@ -23,8 +23,8 @@ func main() {
 	host := os.Getenv("REDIS_ENDPOINT")
 	fmt.Println(host)
 
-	session.Redis_Save("Key2", "Value2")
-	session.Redis_Get("Key2")
+	cognitosession.Redis_Save("Key2", "Value2")
+	cognitosession.Redis_Get("Key2")
 
 
 
