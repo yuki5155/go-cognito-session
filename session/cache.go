@@ -33,11 +33,11 @@ func RedisClient() *redis.Client{
 
 func Redis_Save(key string, value string)  {
 	rdb := RedisClient()
-	json_value, error := json.Marshal(value)
-	if error != nil{
-		panic(error)
-	}
-	err := rdb.Set(ctx, key, json_value, 0).Err()
+	//json_value, error := json.Marshal(value)
+	//if error != nil{
+	//	panic(error)
+	//}
+	err := rdb.Set(ctx, key, value, 0).Err()
 	if err != nil {
 		panic(err)
 	}
