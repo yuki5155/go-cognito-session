@@ -5,7 +5,6 @@ import (
     "github.com/go-redis/redis/v8"
     "fmt"
 	"os"
-	"encoding/json"
 )
 
 var redis_sample string = "sss"
